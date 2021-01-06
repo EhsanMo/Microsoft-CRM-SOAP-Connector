@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>demo</artifactId>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.springframework.boot</groupId>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <artifactId>cxf-rt-frontend-jaxws</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>cxf-rt-transports-http-jetty</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <scope>test</scope>
+      <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>cxf-rt-ws-policy</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>cxf-tools-common</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>cxf-rt-features-logging</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <version>${cxf.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>cxf-rt-ws-security</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>cxf-rt-transports-http</artifactId>
+      <groupId>org.apache.cxf</groupId>
+      <version>${cxf.version}</version>
+    </dependency>
+  </dependencies>
+  <description>Demo project to connect to Microsoft CRM 2011, 2013, 2015 via SOAP protocol</description>
+  <groupId>org.sohagroup.crmconnector</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <name>CRM Connector</name>
+
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>2.4.1</version> <!-- lookup parent from repository -->
+  </parent>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <cxf.version>3.3.2</cxf.version>
+  </properties>
+
+  <version>0.0.1-SNAPSHOT</version>
+
+</project>
